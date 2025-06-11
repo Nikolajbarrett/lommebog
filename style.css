@@ -1,4 +1,4 @@
-/* style.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
@@ -54,6 +54,12 @@ header h1 {
   max-width: 700px;
   margin: .75rem auto;
 }
+.spread img {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 .topics {
   background: white;
   padding: 1.5rem;
@@ -61,10 +67,12 @@ header h1 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   margin-bottom: 2rem;
 }
+.topics h2 {
+  margin-bottom: 1rem;
+}
 .topics ul {
   list-style: none;
-  columns: 2;
-  column-gap: 2rem;
+  padding-left: 1rem;
 }
 .topics li {
   padding: .35rem 0;
@@ -96,9 +104,7 @@ footer {
   color: #666;
   margin-top: 3rem;
 }
-
-/* Responsivt */
 @media (max-width: 600px) {
   header h1 { font-size: 1.8rem; }
-  .topics ul { columns: 1; }
+  .topics ul { padding-left: 0; }
 }
