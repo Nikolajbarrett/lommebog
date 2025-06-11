@@ -1,128 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Akutpsykiatrisk Lommebog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2em;
-    }
-    header {
-      text-align: center;
-      padding: 2em 1em 1em;
-    }
-    header img {
-      width: 100%;
-      max-width: 400px;
-      margin-bottom: 1em;
-      border-radius: 8px;
-    }
-    h1 {
-      font-size: 2em;
-      font-weight: 700;
-    }
-    p {
-      font-size: 1.1em;
-    }
-    .spread {
-      margin: 2em 0;
-      text-align: center;
-    }
-    .spread img {
-      width: 100%;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .features {
-      background: #f8f8f8;
-      padding: 2em 1em;
-      margin: 2em 0;
-      border-radius: 8px;
-    }
-    ul {
-      columns: 2;
-      padding-left: 1em;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .cta a {
-      background-color: #006400;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    @media(max-width: 768px) {
-      ul {
-        columns: 1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container">
+
+    <nav>
+      <a href="index.html">Hjem</a> |
+      <a href="kildeliste.html">Kildeliste</a>
+    </nav>
+
     <header>
-      <img src="forside.png" alt="Akutpsykiatrisk Lommebog forside">
       <h1>Akutpsykiatrisk Lommebog</h1>
-      <p>En klinisk og grafisk visuel guide til psykiatriske forvagter og medicinstuderende – udviklet til både undervisningsbrug og akut klinisk anvendelse.</p>
+      <img src="assets/forside.png" alt="Forside af lommebogen" class="header-img">
     </header>
 
-    <div class="spread">
-      <img src="fanet_ud.png" alt="Eksempler fra bogen">
+    <div class="description">
+      <p><strong>Akutpsykiatrisk Lommebog</strong> er din kompakte, grafiske guide i kittelkort-format. <br>
+      Indeholder <strong>44 action cards</strong> og vejledninger til alt fra sikkerhed i vagten til avanceret kommunikation.</p>
+      <p>ECP-guide til fremgangsmåde og vurdering, omlægning & nedtrapning af psykofarmaka, action cards til:</p>
     </div>
 
-    <section class="features">
-      <h2>Indhold – 44 action cards og vejledninger</h2>
+    <section class="topics">
       <ul>
-        <li>Sikkerhed i vagten</li>
-        <li>Dokumentation af tvang</li>
-        <li>Lovtekst (1+2)</li>
-        <li>Journaloptagelse</li>
-        <li>Objektiv psykisk</li>
-        <li>Selvmordsrisikovurdering</li>
-        <li>Dom til behandling</li>
-        <li>ECT (Fremgangsmåde og vurdering)</li>
-        <li>Alkoholabstinenser (1+2)</li>
-        <li>Den akut farlige og urolige patient</li>
-        <li>Centralstimulantia og overdoser</li>
+        <li>Den akut farlige patient</li>
+        <li>Den meget urolige patient</li>
+        <li>Tvangsindlæggelse & tilbageholdelse</li>
         <li>Strangulering</li>
-        <li>Delir, serotonin- og neuroleptikasyndrom</li>
-        <li>Omlægning og nedtrapning af psykofarmaka</li>
-        <li>Drugtest og promille</li>
-        <li>Opioider</li>
-        <li>Indlæggelse og tilbageholdelse på tvang</li>
-        <li>Kommunikationsteknikker (8 kort)</li>
-        <li>Samtalens opbygning og nonverbal kommunikation</li>
-        <li>Kardiel risiko ved psykofarmaka</li>
-        <li>Hypnotika, benzodiazepiner, lithiumforgiftning</li>
+        <li>Overdosis & narkotika</li>
+        <li>ECT: Fremgangsmåde & Vurdering</li>
+        <li>Kommunikation (8 specialkort)</li>
+        <li>Antidepressiva & Antipsykotika</li>
+        <li>Delir & Serotonergt syndrom</li>
+        <li>Selvmordsrisikovurdering</li>
+        <!-- du kan fortsætte listen med alle emner … -->
       </ul>
     </section>
 
     <div class="cta">
-      <a href="#bestilling">Bestil nu</a>
+      <a href="#bestilling">BESTIL NU</a>
     </div>
-  </div>
 
+    <footer>
+      Et must-have til medicinstuderende og vagthavende læger på psykiatri.  
+      © 2025 Nikolaj Barrett, MD
+    </footer>
+
+  </div>
 </body>
 </html>
+
