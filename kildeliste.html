@@ -1,34 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kildeliste – Akutpsykiatrisk Lommebog</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: auto;
-      padding: 2em;
-    }
-    nav {
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
-      color: #333;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Hjem</a>
-    <a href="kildeliste.html">Kildeliste</a>
-  </nav>
+  <div class="container">
 
-  <h1>Kildeliste</h1>
-  <p>Her indsættes kildelisten til lommebogen.</p>
+    <nav>
+      <a href="index.html">Hjem</a> |
+      <a href="kildeliste.html">Kildeliste</a>
+    </nav>
+
+    <header>
+      <h1>Kildeliste</h1>
+      <img src="assets/kildeliste_qr.png" alt="QR-kode til kildeliste" class="header-img">
+    </header>
+
+    <div class="description">
+      <p>Scan QR-koden eller besøg:</p>
+      <p><a href="https://nikolajbarrett.github.io/lommebog/kildeliste.html">
+        nikolajbarrett.github.io/lommebog/kildeliste.html
+      </a></p>
+    </div>
+
+    <section class="topics">
+      <ul>
+        <li>American Psychiatric Association. DSM-5 (2013).</li>
+        <li>Møller, P. Psykiatriens grundbog (2020).</li>
+        <li>Benjaminsen S. Akut psykiatri i klinikken (2018).</li>
+        <!-- Tilføj alle dine kilder her under hver emnegruppe -->
+      </ul>
+    </section>
+
+    <footer>
+      © 2025 Nikolaj Barrett, MD
+    </footer>
+
+  </div>
 </body>
 </html>
