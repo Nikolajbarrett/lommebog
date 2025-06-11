@@ -3,105 +3,125 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akutpsykiatrisk Lommebog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-      background-color: #fdfdfd;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111;
       line-height: 1.6;
     }
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 0.2em;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
     }
-    .forside {
+    header {
       text-align: center;
-      margin-bottom: 2em;
+      padding: 2em 1em 1em;
     }
-    .forside img {
+    header img {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
+      margin-bottom: 1em;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .beskrivelse {
-      margin-bottom: 2em;
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
     }
-    .emner {
+    p {
+      font-size: 1.1em;
+    }
+    .spread {
+      margin: 2em 0;
+      text-align: center;
+    }
+    .spread img {
+      width: 100%;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .features {
+      background: #f8f8f8;
+      padding: 2em 1em;
+      margin: 2em 0;
+      border-radius: 8px;
+    }
+    ul {
       columns: 2;
-      -webkit-columns: 2;
-      -moz-columns: 2;
-      font-size: 0.95em;
+      padding-left: 1em;
     }
-    .bestil {
+    li {
+      margin-bottom: 0.5em;
+    }
+    .cta {
       text-align: center;
       margin-top: 2em;
     }
-    .bestil a {
-      background-color: #4CAF50;
+    .cta a {
+      background-color: #006400;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      font-weight: bold;
       border-radius: 6px;
-      display: inline-block;
     }
-    nav {
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
-      color: #333;
-      text-decoration: none;
+    @media(max-width: 768px) {
+      ul {
+        columns: 1;
+      }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Hjem</a>
-    <a href="kildeliste.html">Kildeliste</a>
-  </nav>
+  <div class="container">
+    <header>
+      <img src="forside.png" alt="Akutpsykiatrisk Lommebog forside">
+      <h1>Akutpsykiatrisk Lommebog</h1>
+      <p>En klinisk og grafisk visuel guide til psykiatriske forvagter og medicinstuderende – udviklet til både undervisningsbrug og akut klinisk anvendelse.</p>
+    </header>
 
-  <h1>Akutpsykiatrisk Lommebog</h1>
+    <div class="spread">
+      <img src="fanet_ud.png" alt="Eksempler fra bogen">
+    </div>
 
-  <div class="forside">
-    <img src="forvagtsbog.png" alt="Forside af Akutpsykiatrisk Lommebog">
-  </div>
+    <section class="features">
+      <h2>Indhold – 44 action cards og vejledninger</h2>
+      <ul>
+        <li>Sikkerhed i vagten</li>
+        <li>Dokumentation af tvang</li>
+        <li>Lovtekst (1+2)</li>
+        <li>Journaloptagelse</li>
+        <li>Objektiv psykisk</li>
+        <li>Selvmordsrisikovurdering</li>
+        <li>Dom til behandling</li>
+        <li>ECT (Fremgangsmåde og vurdering)</li>
+        <li>Alkoholabstinenser (1+2)</li>
+        <li>Den akut farlige og urolige patient</li>
+        <li>Centralstimulantia og overdoser</li>
+        <li>Strangulering</li>
+        <li>Delir, serotonin- og neuroleptikasyndrom</li>
+        <li>Omlægning og nedtrapning af psykofarmaka</li>
+        <li>Drugtest og promille</li>
+        <li>Opioider</li>
+        <li>Indlæggelse og tilbageholdelse på tvang</li>
+        <li>Kommunikationsteknikker (8 kort)</li>
+        <li>Samtalens opbygning og nonverbal kommunikation</li>
+        <li>Kardiel risiko ved psykofarmaka</li>
+        <li>Hypnotika, benzodiazepiner, lithiumforgiftning</li>
+      </ul>
+    </section>
 
-  <div class="beskrivelse">
-    <p><strong>Akutpsykiatrisk Lommebog</strong> er en kompakt, grafisk og klinisk fokuseret guide til psykiatriske forvagter. Bogen indeholder <strong>44 action cards og vejledninger</strong> – overskueligt opstillet i kittelkort-format og designet til hurtig anvendelse i praksis.</p>
-    <p>Bogen er et <strong>must-have i lommen</strong> for medicinstuderende og yngre læger i vagt på psykiatriske afdelinger.</p>
-    <p>Du får bl.a. overblik over emner som:</p>
-  </div>
-
-  <div class="emner">
-    <ul>
-      <li>Sikkerhed i vagten</li>
-      <li>Dokumentation af tvang</li>
-      <li>Journaloptagelse</li>
-      <li>Objektiv psykisk</li>
-      <li>Selvmordsrisikovurdering</li>
-      <li>ECT</li>
-      <li>Alkoholabstinenser</li>
-      <li>Overdoser</li>
-      <li>Delir</li>
-      <li>Malignt neuroleptikasyndrom</li>
-      <li>Antidepressiva og antipsykotika</li>
-      <li>Opioider</li>
-      <li>Tvangslove</li>
-      <li>Kommunikation i psykiatrien</li>
-    </ul>
-  </div>
-
-  <div class="bestil">
-    <a href="#bestilling">Bestil nu</a>
-    <p style="margin-top: 1em;">(betalingssiden tilføjes snart med MobilePay og formular)</p>
+    <div class="cta">
+      <a href="#bestilling">Bestil nu</a>
+    </div>
   </div>
 
 </body>
